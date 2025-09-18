@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "JobTrackr Extension",
+  "version": "2.0",
+  "description": "Analyzes CVs and saves applications to your JobTrackr dashboard.",
+  "icons": {
+  "16": "icon.png",
+  "48": "icon.png",
+  "128": "icon.png"
+},
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "cookies" 
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "http://localhost:3000/*" 
+  ]
+}
+
