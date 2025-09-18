@@ -31,13 +31,13 @@
 <p>Additionally, <code>host_permissions</code> are used for:</p>
 <ul>
   <li><code>https://generativelanguage.googleapis.com/*</code> — to analyze job descriptions and CVs with Google's API.</li>
-  <li><code>http://localhost:3000/*</code> — to fetch and save data in your local dashboard.</li>
+  <li><code>https://applywise-gilt.vercel.app/*</code> — to fetch and save data in your local dashboard.</li>
 </ul>
 
 <h2>3. Remote Code Justification</h2>
 <p>The Extension uses remote code solely for secure API calls:</p>
 <ul>
-  <li><strong>Applywise Dashboard:</strong> (<code>http://localhost:3000</code>) to retrieve your saved CV and save new applications.</li>
+  <li><strong>Applywise Dashboard:</strong> (<code>https://applywise-gilt.vercel.app/code>) to retrieve your saved CV and save new applications.</li>
   <li><strong>Google’s Generative Language API:</strong> (<code>https://generativelanguage.googleapis.com/*</code>) to analyze job descriptions and CVs.</li>
 </ul>
 <p>No remote code executes arbitrary instructions on your computer.</p>
