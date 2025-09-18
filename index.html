@@ -1,0 +1,49 @@
+Applywise Extension Privacy Policy
+This Privacy Policy explains how the Applywise Extension ("the Extension") collects, uses, and protects user data. By using our Extension, you agree to the terms of this policy.
+
+1. Data Collection and Use
+
+The Applywise Extension is designed to help you analyze and manage your job applications. To fulfill this purpose, the Extension collects and processes the following user data:
+
+Authentication Information: We collect your name, email address, and profile picture from your Google account when you sign in. This information is used to create and manage your personal user account on your local Applywise dashboard at http://localhost:3000. Your authentication status is maintained using browser cookies to ensure a seamless experience/route.ts].
+
+Website Content: We collect job descriptions from websites like LinkedIn, Indeed, and Glassdoor. This data, along with your CV text, is sent to Google's Generative Language API to perform an analysis and generate a tailored CV and cover letter. We also collect the URL of the job post for saving to your dashboard.
+
+User Activity: We monitor user activity within the Extension, such as button clicks, to perform core functions like retrieving job descriptions, saving applications, and navigating to your dashboard.
+
+Job Application Data: We store the job application data you choose to save, including company name, job title, job description, your tailored CV, and any notes, on your local Applywise dashboard.
+
+2. Justification for Permissions
+
+The Extension requires the following permissions to function as intended:
+
+activeTab: Allows the Extension to interact with the currently active tab to retrieve the job description content.
+
+scripting: Allows the Extension to inject a script to retrieve content from job description pages that are not fully exposed to the DOM.
+
+tabs: Allows the Extension to create new tabs, specifically for opening your local Applywise dashboard.
+
+cookies: Allows the Extension to send authentication cookies to your local Applywise dashboard (http://localhost:3000) to verify your identity and access your data.
+
+The Extension also uses host_permissions for https://generativelanguage.googleapis.com/* and http://localhost:3000/* to facilitate these necessary API calls and data storage.
+
+3. Remote Code Justification
+
+The Extension uses remote code solely for making secure API calls to:
+
+Your local Applywise dashboard (http://localhost:3000) to retrieve your saved CV and save new applications.
+
+Google's Generative Language API (https://generativelanguage.googleapis.com/*) to analyze job descriptions and CVs.
+The remote code does not execute arbitrary code on the user's computer.
+
+4. Data Sharing
+
+We do not sell or transfer user data to third parties for purposes unrelated to the Extension's core functionality. The job description and CV text are sent to Google's Generative Language API for processing only when you initiate the "Analyze" function.
+
+5. Data Retention and Security
+
+Your data is stored securely on your local Applywise dashboard under your control. We use secure authentication practices to protect your data.
+
+6. Contact Us
+
+If you have any questions about this Privacy Policy, please contact us.
